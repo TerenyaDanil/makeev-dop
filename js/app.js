@@ -136,6 +136,21 @@
 		//const viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	}
 }());
+
+
+var qus = document.querySelectorAll('.qustions__item-plus')
+
+qus.forEach(function (el) {
+	el.onclick = function () {
+		el.classList.toggle("active");
+		el.previousElementSibling.classList.toggle("active");
+	}
+});
+
+
+
+
+
 if (window.innerWidth > 737) {
 
 	let tl1 = gsap.timeline({
@@ -173,7 +188,7 @@ if (window.innerWidth > 737) {
 	});
 
 	tl3.from(".cases__item-3", { duration: 1.3, ease: "power4.out", opacity: 0.2 }, "-=.3")
-		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 650 }, "-=.6")
+		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 950 }, "-=.6")
 
 
 
@@ -187,7 +202,7 @@ if (window.innerWidth > 737) {
 	});
 
 	tl4.from(".cases__item-4", { duration: 1.3, ease: "power4.out", opacity: 0.2 }, "-=.3")
-		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1000 }, "-=.6")
+		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1250 }, "-=.6")
 
 
 	let tl5 = gsap.timeline({
@@ -199,7 +214,7 @@ if (window.innerWidth > 737) {
 	});
 
 	tl5.from(".cases__item-5", { duration: 1.3, ease: "power4.out", opacity: 0.2 }, "-=.3")
-		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1300 }, "-=.6")
+		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1500 }, "-=.6")
 
 	let tl6 = gsap.timeline({
 		scrollTrigger: {
@@ -210,7 +225,7 @@ if (window.innerWidth > 737) {
 	});
 
 	tl6.from(".cases__item-6", { duration: 1.3, ease: "power4.out", opacity: 0.2 }, "-=.3")
-		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1450 }, "-=.6")
+		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1650 }, "-=.6")
 
 
 	let tl7 = gsap.timeline({
@@ -222,7 +237,7 @@ if (window.innerWidth > 737) {
 	});
 
 	tl7.from(".cases__item-7", { duration: 1.3, ease: "power4.out", opacity: 0.2 }, "-=.3")
-		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 2000 }, "-=.6")
+		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 2530 }, "-=.6")
 		.add(function () {
 			var end = Date.now() + (2 * 1000);
 
@@ -288,7 +303,7 @@ if (window.innerWidth > 737) {
 	});
 
 	tl3.from(".cases__item-3", { duration: 1.3, ease: "power4.out", opacity: 0.2 }, "-=.3")
-		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 550 }, "-=.6")
+		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 650 }, "-=.6")
 
 
 
@@ -302,7 +317,7 @@ if (window.innerWidth > 737) {
 	});
 
 	tl4.from(".cases__item-4", { duration: 1.3, ease: "power4.out", opacity: 0.2 }, "-=.3")
-		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 770 }, "-=.6")
+		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 870 }, "-=.6")
 
 
 	let tl5 = gsap.timeline({
@@ -314,7 +329,7 @@ if (window.innerWidth > 737) {
 	});
 
 	tl5.from(".cases__item-5", { duration: 1.3, ease: "power4.out", opacity: 0.2 }, "-=.3")
-		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 950 }, "-=.6")
+		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1050 }, "-=.6")
 
 
 
@@ -327,7 +342,7 @@ if (window.innerWidth > 737) {
 	});
 
 	tl6.from(".cases__item-6", { duration: 1.3, ease: "power4.out", opacity: 0.2 }, "-=.3")
-		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1250 }, "-=.6")
+		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1200 }, "-=.6")
 
 
 
@@ -341,7 +356,7 @@ if (window.innerWidth > 737) {
 	});
 
 	tl7.from(".cases__item-7", { duration: 1.3, ease: "power4.out", opacity: 0.2 }, "-=.3")
-		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1400 }, "-=.6")
+		.to(".cases__dop span", { duration: 1.3, ease: "power4.out", height: 1660 }, "-=.6")
 		.add(function () {
 			var end = Date.now() + (2 * 1000);
 
