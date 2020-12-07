@@ -1151,7 +1151,7 @@ body.lock {
 
   .bottom-header__name {
     left: 50%;
-    top: 235%;
+    top: 260%;
     font-size: 1.4rem;
     bottom: -70%;
     -webkit-transform: translate(-50%, 0);
